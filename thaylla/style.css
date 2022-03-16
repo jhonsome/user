@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat+Alternates:wght@400;700&display=swap');
+
+@keyframes animate {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+:root {
+  --color1: #82572F;
+  --color2: #870734;
+  --color3: #EF473A;
+  --color4: #FFD6BF;
+  --heading_font: Courgette, cursive;
+  --defaut_font: "Montserrat Alternates", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: var(--defaut_font);
+  font-size: 18px;
+  background-color: var(--color4);
+}
+
+body a {
+  color: #FFFFFF;
+}
+
+body > * {
+  min-width: 300px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 1 calc(100vw / 2);
+  height: 100%;
+  background-color: var(--color2);
+  box-shadow: 2px 0px 5px #00000055;
+  transform: translateX(-50vw);
+  opacity: 0;
+  animation: animate 1s ease-out 1s forwards;
+}
+
+header > h1 {
+  font-family: var(--heading_font);
+  font-size: 2.7em;
+  margin-left: 1em;
+  white-space: nowrap;
+  color: var(--color1);
+  text-shadow: 0px 0px 2px black;
+}
+
+header > img {
+  width: 200px;
+  height: 200px;
+  outline: 5px solid var(--color1);
+  border-radius: 50%;
+  margin: 10px auto;
+  box-shadow: 0px 0px 10px black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex: 1 0 auto;
+  opacity: 0;
+  animation: animate 1s ease-out 2s forwards;
+}
+
+main > p {
+  text-align: center;
+  line-height: 2em;
+  padding: 1em;
+}
+
+main > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+main > nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--color3);
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+main > hr {
+  border: 1px solid var(--color1);
+  width: 90%;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--color2);
+  padding: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0px -2px 5px #00000055;
+}
