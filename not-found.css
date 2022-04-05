@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--defaut-font);
   font-size: 18px;
   color: var(--text-color);
 }
@@ -36,6 +36,11 @@ body p {
 
 body a {
   color: var(--color1);
+}
+
+body h1, 
+body h2 {
+  font-family: var(--heading-font);
 }
 
 section {
@@ -61,6 +66,4 @@ section:nth-of-type(2) {
   background-color: var(--color3);
 }
 
-section:nth-of-type(2) > p:first-child {
-  font-size: 2em;
-}
+
