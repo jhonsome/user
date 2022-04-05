@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --color1: #FFCC00;
+  --color2: #1D1D1D;
+  --color3: #272727;
+  --color4: #3D3D3D;
+  --text-color: #FFFFFF;
+  --heading-font: Comfortaa, cursive;
+  --defaut-font: Montserrat, sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+body p {
+  padding: 5px;
+}
+
+body a {
+  color: var(--color1);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 500px;
+  text-align: center;
+  padding: 10px;
+}
+
+section:nth-of-type(1) {
+  background-color: var(--color4);
+}
+
+section:nth-of-type(1) > h1 {
+  font-size: 10em;
+  color: var(--color1);
+}
+
+section:nth-of-type(2) {
+  background-color: var(--color3);
+}
+
+section:nth-of-type(2) > p:first-child {
+  font-size: 2em;
+}
